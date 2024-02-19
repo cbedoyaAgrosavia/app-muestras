@@ -1,0 +1,16 @@
+<ion-header [translucent]="true" class="login">
+  <div class="contenedor-logo">
+    <ion-img class="logo" src="../../../assets/LogoAgrosavia.png"></ion-img>
+  </div>
+  <div class="contenedor-data">
+    <ion-item>
+      <ion-input class="custom" label="Usuario" labelPlacement="floating" placeholder="Ingrese Usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input class="custom" label="Contraseña" labelPlacement="floating" placeholder="Ingrese Contraseña"></ion-input>
+    </ion-item>
+  </div>
+  <div class="contenedor-boton">
+    <ion-button (click)="login()"  expand="block">Iniciar Sesión</ion-button>
+  </div>
+</ion-header>
