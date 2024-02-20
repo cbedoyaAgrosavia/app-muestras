@@ -8,9 +8,9 @@
 
 <ion-content>
   <ion-grid fixed>
-    <ion-row class="contenedor-usuario">
+    <ion-row class="container-user">
       <ion-col size="6">
-        <div class="contenedor-bienvenida">
+        <div class="container-welcome">
           <ion-text>Bienvenido</ion-text>
           <ion-text>Usuario</ion-text>
         </div>
@@ -20,15 +20,19 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <div class="contenedor-menu">
-        <ion-card (click)="readBarcode()" class="card-item">
-          <img src="../../../assets/scanBarcode.jpg" />
+      <div class="container-menu">
+        <ion-card (click)="readBarcode()" class="light card-item">
+
+          <img src="../../../assets/scanBarcode.png" />
+
           <ion-card-header>
             <ion-card-title>Lectura de codigo barras</ion-card-title>
           </ion-card-header>
         </ion-card>
-        <ion-card (click)="readBasicInfo()" class="card-item">
+        <ion-card (click)="readBasicInfo()" class="light card-item">
+
           <img src="../../../assets/infoBasica.png" />
+
           <ion-card-header>
             <ion-card-title>Información Basica</ion-card-title>
           </ion-card-header>
