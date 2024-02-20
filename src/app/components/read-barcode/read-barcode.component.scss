@@ -1,0 +1,17 @@
+.container-scanner{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    background: #3445f7;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
