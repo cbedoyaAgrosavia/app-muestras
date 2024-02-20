@@ -9,11 +9,19 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./components/login/login.module').then( m => m.LoginPageModule)    
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)    
   },
   {
     path: 'home',
-    loadChildren: () => import('./components/home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'barcode',
+    loadChildren: () => import('./pages/barcode/barcode.module').then( m => m.BarcodePageModule)
+  },
+  {
+    path: 'info-basic',
+    loadChildren: () => import('./pages/info-basic/info-basic.module').then( m => m.InfoBasicPageModule)
   },
 ];
 

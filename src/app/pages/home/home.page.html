@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="toolbar-logo">
+      <ion-img src="../../../assets/LogoAgrosavia.png"></ion-img>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row class="contenedor-usuario">
+      <ion-col size="6">
+        <div class="contenedor-bienvenida">
+          <ion-text>Bienvenido</ion-text>
+          <ion-text>Usuario</ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <img class="img-lab" src="../../../assets/Cientifico.svg" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <div class="contenedor-menu">
+        <ion-card (click)="readBarcode()" class="card-item">
+          <img src="../../../assets/scanBarcode.jpg" />
+          <ion-card-header>
+            <ion-card-title>Lectura de codigo barras</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+        <ion-card (click)="readBasicInfo()" class="card-item">
+          <img src="../../../assets/infoBasica.png" />
+          <ion-card-header>
+            <ion-card-title>Información Basica</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>
