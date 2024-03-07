@@ -8,6 +8,10 @@ Muestras
 
 ## Uso
 
+Para ejecutar en navegador: 
+
+-   ng serve --port 5173 --ssl
+
 Para ejecutar el local :
 
 -   npm i
@@ -15,9 +19,10 @@ Para ejecutar el local :
 
 Para ejecutar en Android studio
 
--   ionic build
--   ionic cap add (android / ios)
--   ionic cap open (android / ios)
+-   Borrar carpetas wwww y android / ios
+-   ionic build --> crea carpeta www
+-   ionic cap add (android / ios) --> Crea carpeta android / ios
+-   ionic cap open (android / ios) --> Abre android studio para generar el .apk
 
 Para ejecutar en Android studio hot reload
 

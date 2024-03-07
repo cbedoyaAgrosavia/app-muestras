@@ -9,6 +9,7 @@ import { BarcodePageRoutingModule } from './barcode-routing.module';
 import { BarcodePage } from './barcode.page';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 import { ReadBarcodeComponent } from 'src/app/components/read-barcode/read-barcode.component';
+import { QRCodeModule } from 'angularx-qrcode';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { ReadBarcodeComponent } from 'src/app/components/read-barcode/read-barco
     FormsModule,
     IonicModule,
     BarcodePageRoutingModule,
+    QRCodeModule
   ],
   providers: [
     BarcodeScanner,

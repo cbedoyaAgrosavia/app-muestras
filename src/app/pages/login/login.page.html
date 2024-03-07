@@ -2,18 +2,23 @@
   <div class="container-logo">
     <ion-img class="logo" src="../../../assets/LogoAgrosavia.png"></ion-img>
   </div>
-  <div class="container-data">
-    <ion-item>
-      <ion-input 
-                label="Usuario" 
-                labelPlacement="floating" 
-                placeholder="Ingrese Usuario">
-      </ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input label="Contraseña" labelPlacement="floating" placeholder="Ingrese Contraseña"></ion-input>
-    </ion-item>
-  </div>
+  <form [formGroup]="formLogin">
+    <div class="container-data">
+      <ion-item>
+        <ion-input 
+                  formControlName="usuario"
+                  label="Usuario" 
+                  labelPlacement="floating" 
+                  placeholder="Ingrese Usuario">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input 
+            formControlName="password"
+            label="Contraseña" type="password" labelPlacement="floating" placeholder="Ingrese Contraseña"></ion-input>
+      </ion-item>
+    </div>
+  </form>
   <div class="container-boton">
     <ion-button (click)="login()"  expand="block">Iniciar Sesión</ion-button>
   </div>

@@ -1,17 +1,35 @@
-.container-scanner{ 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container-scanner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .boton {
-    width: 100px;
-    margin-top: 10px;
-    padding: 10px;
-    background: #3445f7;
-    border-radius: 5px;
-    color: #fff;
-    text-align: center;
+  width: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  background: #3445f7;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 91%;
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+
+.container-scanner-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: start;
+  padding: 50px;
 }
